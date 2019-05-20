@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="./js/lib/jquery.min.js"></script>
+    <!--layui框架样式-->
+    <link rel="stylesheet" href="./js/lib/layui/css/layui.css">
+    <!--layui js-->
+    <script src="./js/lib/layui/layui.js"></script>
+    <!--注册 登录 找回密码 头部公共样式-->
+    <link rel="stylesheet" href="./css/userPublic.css">
+    <!--全局公共js-->
+    <script src="./js/global.js"></script>
+
+    <!--forget css 引用 register css-->
+    <link rel="stylesheet" href="./css/register.css">
+    <!--私有js-->
+    <script src="./js/forget.js"></script>
+    <!--表单校验-->
+    <script src="./js/lib/Validform_v5.3.2_min.js"></script>
+</head>
+<body>
+    <div class="user-header">
+        <div class="user-header-con">
+            <img src="./images/log.png" alt="">
+            <div class="user-header-btn">
+                <a href="javascript:;" style="opacity: 0">忘记密码</a>
+                <a href="javascript:;">返回登录页</a>
+            </div>
+        </div>
+    </div>
+    <div class="register-box">
+        <div class="register-top">
+            <h3>找回密码</h3>
+            <p>非雇佣员工发工资更便捷</p>
+        </div>
+
+        <div class="ui-register-form">
+            <form class="layui-form js-forget-form" action="https://www.baidu.com" method="post" enctype="multipart/form-data">
+                <!--第一步-->
+                <div class="js-forget-module1">
+                    <input type="text" name="loginName" id="ad" disabled="false" value="123"  datatype="*" nullmsg="请输入登录名" placeholder="请设置登录名" autocomplete="off" class="layui-input">
+                    <input type="text" name="phone"  datatype="m" nullmsg="请输入手机号！" errormsg="请输入正确的手机号！" placeholder="请输入您的手机号" class="layui-input">
+                    <div class="ui-code-box">
+                        <input type="text" datatype="*" nullmsg="请输入短信验证码！" errormsg="请输入短信验证码！" name="captcha" placeholder="请输入短信验证码" class="layui-input ui-code-input">
+                        <span class="ui-code js-getCode">获取短信验证码</span>
+                    </div>
+                    <a class="ui-register-btn js-forget-one" href="javascript:;">下一步</a>
+                </div>
+
+                <!--第二步-->
+                <div style="display: none" class="js-forget-module2">
+                    <input type="password" name="password" nullmsg="请输入密码" datatype="*6-15" errormsg="密码范围在6~15位之间！" placeholder="请设置登录密码" autocomplete="off" class="layui-input">
+                    <input type="password" name="password2" nullmsg="请再次输入密码" datatype="*" recheck="password" errormsg="您两次输入的账号密码不一致！"  placeholder="请再次输入登录密码" class="layui-input">
+                    <a class="ui-register-btn js-forget-two" href="javascript:;">找回密码</a>
+                </div>
+            </form>
+        </div>
+        <script>
+            // $("input[name='loginName']").removeAttr('disabled')
+        </script>
+
+    </div>
+</body>
+</html>

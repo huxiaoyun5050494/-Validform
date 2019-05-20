@@ -1,0 +1,80 @@
+.ui-transactionRecord-box .ui-capital-page{
+	text-align: center;
+	margin-top: 30px;
+}
+.ui-transactionRecord-box table{
+	margin-top: 25px;
+}
+.ui-add-btn{
+	border: 1px solid #5e84ff;
+	font-size: 14px;
+	height: 40px;
+	line-height: 40px;
+	text-align: center;
+	color: #fff;
+	display: inline-block;
+	width: 90px;
+	border-radius: 2px;
+	float: right;
+	margin-top: 19px;
+	margin-right: 20px;
+	background: #5e84ff;
+}
+
+.capital-popups-box{
+	background: #fff;
+	width: 478px;
+	margin-top: 30px;
+}
+.capital-popups-box .layui-input-block{
+	margin-left: 130px;
+}
+.capital-popups-box em{
+	font-style: normal;
+	color: red;
+	display: inline-block;
+	vertical-align: middle;
+	margin-right: 5px;
+	position: relative;
+	top: 1px;
+}
+
+.capital-popups-box label{
+	width: 100px;
+	text-align: right;
+}
+.ui-submit{
+	background: #5e84ff;
+	color: #fff;
+	font-size: 16px;
+	height: 50px;
+	outline: none;
+	cursor: pointer;
+	border: none;
+	border-radius: 3px;
+	display: inline-block;
+	width: 350px;
+	text-align: center;
+}
+.layui-input-block .ui-submit:nth-child(1){
+	width:218px;
+}
+.layui-input-block .ui-submit:nth-child(2){
+	width:116px;
+	background: #fafbfd;
+	color:#aaaeb7;
+	outline: 1px solid #efefef;
+	margin-left: 9px;
+}
+.ui-popup{
+	width: 450px;
+}
+.ui-change a{
+	color:#5e84ff;
+	font-size: 14px;
+	padding: 0 14px;
+
+}
+.ui-change a:nth-child(1){
+	border-right: 1px solid #cdcdcd;
+}

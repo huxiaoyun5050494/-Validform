@@ -1,0 +1,129 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+ul,ol {
+	list-style: none;
+}
+a {
+	text-decoration: none;
+	color: #333;
+}
+.clearfix::after{
+	content: " ";
+	display: block;
+	clear: both;
+	height: 0;
+	line-height: 0;
+	overflow: visible;
+}
+img {
+	border: none;
+	vertical-align: middle;
+}
+h1,h2,h3,h4,h5,h6{
+	font-weight: normal;
+}
+body{
+	font-size: 14px;
+	font-family: "微软雅黑";
+}
+th,td,.layui-table th{
+	text-align: center;
+}
+
+
+/*icon 图标*/
+@font-face {
+	font-family: 'iconfont';
+	src: url('../font/iconfont.eot');
+	src: url('../font/iconfont.eot?#iefix') format('embedded-opentype'),
+	url('../font/iconfont.woff') format('woff'),
+	url('../font/iconfont.ttf') format('truetype'),
+	url('../font/iconfont.svg#iconfont') format('svg');
+}
+.iconfont{
+	font-family:"iconfont" !important;
+	font-size:16px;font-style:normal;
+	-webkit-font-smoothing: antialiased;
+	-webkit-text-stroke-width: 0.2px;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+/*layer 样式重置*/
+.layer-nav-reset{
+	width: 278px;
+}
+.layui-nav-side{
+	top: 242px;
+}
+.nav-select-box{
+	background: #fff;
+}
+.layui-form-select dl dd.layui-this {
+	background-color: #f2f2f2;
+	color: #333;
+}
+input::placeholder{
+	color: #aaaeb7;
+}
+.layui-laypage .layui-laypage-curr .layui-laypage-em{
+	background: #5e84ff;
+}
+.layui-table tbody tr:hover, .layui-table thead tr, .layui-table-click, .layui-table-header, .layui-table-hover, .layui-table-mend, .layui-table-patch, .layui-table-tool, .layui-table-total, .layui-table-total tr, .layui-table[lay-even] tr:nth-child(even) {
+	background-color: #fafbfd;
+}
+/*.layui-input:focus, .layui-textarea:focus {*/
+/*border-color: #5e84ff!important;*/
+/*}*/
+.layui-layer-title{
+	padding: 6px 20px!important;
+	font-size: 16px!important;
+}
+.layui-form-checked[lay-skin=primary] i {
+	border-color: #5e84ff;
+	background-color: #5e84ff;
+	color: #fff;
+}
+/*layer 样式重置 end*/
+
+
+/*头部公共样式*/
+.user-header{
+	height: 58px;
+	line-height: 58px;
+	border-bottom: 1px solid #ededed;
+}
+.user-header img{
+	/*width: 100px;*/
+	/*height: auto;*/
+}
+.user-header-con{
+	width: 1200px;
+	margin: 0 auto;
+}
+.user-header-con{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.user-header-btn{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.user-header-btn span{
+	color: #99a0aa;
+}
+.user-header-btn a:nth-of-type(1){
+	color: #99a0aa;
+	margin-right: 20px;
+}
+.user-header-btn a:nth-of-type(2){
+	background: #5e84ff;
+	color: #fff;
+	width: 92px;
+	height: 34px;
+	line-height: 34px;
+	text-align: center;
+}

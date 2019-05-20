@@ -1,0 +1,44 @@
+.ui-submit{
+    background: #5e84ff;
+    color: #fff;
+    font-size: 16px;
+    height: 50px;
+    outline: none;
+    cursor: pointer;
+    border: none;
+    border-radius: 3px;
+    display: inline-block;
+    width: 350px;
+    text-align: center;
+}
+.layui-input-block .ui-submit:nth-child(1){
+    width:218px;
+}
+.layui-input-block .ui-submit:nth-child(2){
+    width:116px;
+    background: #fafbfd;
+    color:#aaaeb7;
+    outline: 1px solid #efefef;
+    margin-left: 9px;
+}
+
+.ui-enterAuth-form em{
+    font-style: normal;
+    color: red;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 5px;
+    position: relative;
+    top: 1px;
+}
+.ui-enterAuth-form .layui-inline{
+   width:350px;
+}
+.ui-enterAuth-form .layui-input{
+   width:350px;
+}
+.ui-enterAuth-form .layui-form-label {
+    width: 84px;
+}
+
+

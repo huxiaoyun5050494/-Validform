@@ -1,0 +1,185 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="./js/lib/jquery.min.js"></script>
+    <!--layui框架样式-->
+    <link rel="stylesheet" href="./js/lib/layui/css/layui.css">
+    <!--layui js-->
+    <script src="./js/lib/layui/layui.js"></script>
+    <!--全局公共样式-->
+    <link rel="stylesheet" href="./css/public.css">
+    <!--全局公共js-->
+    <script src="./js/global.js"></script>
+
+    <!--私有css-->
+    <link rel="stylesheet" href="./css/askGetMoney.css">
+    <!--私有js-->
+    <script src="./js/askGetMoney.js"></script>
+    <!--表单校验-->
+    <script src="./js/lib/Validform_v5.3.2_min.js"></script>
+</head>
+<body>
+<!--左侧菜单-->
+<div class="ui-left-nemu">
+    <div class="nav-top-box">
+        <div class="nav-logo-box">
+            <img src="./images/log-header.png" alt="">
+        </div>
+        <div class="layui-form nav-select-box">
+            <select name="city" lay-verify="" lay-filter="nav-select">
+                <option value="">北京未名品尚技术有限公司</option>
+                <option value="010">北京</option>
+                <option value="021">上海</option>
+                <option value="0571">杭州</option>
+            </select>
+        </div>
+        <p class="nav-text">导航列表</p>
+    </div>
+    <ul class="nav-list-box">
+        <li>
+            <a  href="javascript:;"> <i class="iconfont">&#xe6ec;</i><span>资金管理</span></a>
+        </li>
+        <li>
+            <a class="active" href="javascript:;"><i class="iconfont">&#xe6bc;</i><span>发放管理</span></a>
+        </li>
+        <li>
+            <a href="javascript:;"><i class="iconfont">&#xe6b9;</i><span>发放记录</span></a>
+        </li>
+
+        <li>
+            <a href="javascript:;"><i class="iconfont">&#xe62c;</i><span>账户管理</span></a>
+        </li>
+        <li>
+            <a href="javascript:;"><i class="iconfont">&#xe6a3;</i><span>资金管理</span></a>
+        </li>
+        <li>
+            <a href="javascript:;"><i class="iconfont">&#xe658;</i><span>发票管理</span></a>
+        </li>
+        <li>
+            <a href="javascript:;"><i class="iconfont">&#xe644;</i><span>订单管理</span></a>
+        </li>
+        <li>
+            <a href="javascript:;"><i class="iconfont">&#xe664;</i><span>操作员管理</span></a>
+        </li>
+
+    </ul>
+</div>
+<!--右侧-->
+<div class="ui-right-content">
+    <!--头部-->
+    <header class="g-header-box">
+        <div class="header-left">
+            <a href="javascript:;">当前位置：资金管理&nbsp;&nbsp;/</a>
+            <a href="javascript:;" class="active"> 申请提现</a>
+        </div>
+        <div class="header-user-box">
+            <img src="./images/log.png" alt="">
+            <span>退出</span>
+        </div>
+    </header>
+    <!--内容-->
+    <div class="ui-container-g js-container-g">
+
+        <!--交易记录 独立内容-->
+        <div class="ui-transactionRecord-box">
+            <h3 class="ui-g-h3-border">申请提现</h3>
+            <div>
+                <form action="" method="" class="layui-form capital-table ui-staffEditor-form">
+                    <table class="layui-table" lay-skin="line">
+                        <colgroup>
+                            <col width="150">
+                            <col width="200">
+                            <col>
+                        </colgroup>
+                        <thead>
+                        <tr>
+                            <th>商户名称</th>
+                            <th>剩余金额（元）</th>
+                            <th>提现金额（元）</th>
+                            <th>手续费（元）</th>
+                            <th>到账金额（元）</th>
+                            <th>操作</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td>AAA</td>
+                            <td>1</td>
+                            <td class="ui-input">
+                                <input type="text" name="" placeholder="请输入提现金额">
+                            </td>
+                            <td>888</td>
+                            <td>8</td>
+                            <td class="ui-change">
+                                <a href="javascript:;" class="js-change">全部提现</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>AAA</td>
+                            <td>1</td>
+                            <td class="ui-input">
+                                <input type="text" name="" placeholder="请输入提现金额">
+                            </td>
+                            <td>888</td>
+                            <td>8</td>
+                            <td class="ui-change">
+                                <a href="javascript:;" class="js-change">全部提现</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>AAA</td>
+                            <td>1</td>
+                            <td class="ui-input">
+                                <input type="text" name="" placeholder="请输入提现金额">
+                            </td>
+                            <td>888</td>
+                            <td>8</td>
+                            <td class="ui-change">
+                                <a href="javascript:;" class="js-change">全部提现</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>AAA</td>
+                            <td>1</td>
+                            <td class="ui-input">
+                                <input type="text" name="" placeholder="请输入提现金额">
+                            </td>
+                            <td>888</td>
+                            <td>8</td>
+                            <td class="ui-change">
+                                <a href="javascript:;" class="js-change">全部提现</a>
+                            </td>
+                        </tr>
+
+
+
+
+                        </tbody>
+                    </table>
+
+                    <div>
+                        <!--分页-->
+                        <div id="capital-page" class="ui-capital-page"></div>
+                        <!--page 隐藏字段-->
+                        <input type="hidden" name="pages">
+                    </div>
+                </form>
+            </div>
+
+        </div>
+        <div class="num-warp">
+
+            <button type="button" class="ui-submit">提交申请</button>
+            <p> 提现总金额：<span>￥3989</span>手续费总金额：<span>￥3989</span>到账总金额：<span>￥3989</span></p>
+        </div>
+        <!--交易记录 独立内容  end-->
+
+    </div>
+</div>
+</body>
+</html>

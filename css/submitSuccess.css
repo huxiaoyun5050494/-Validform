@@ -1,0 +1,14 @@
+
+.ui-icon-warp{
+    color: #99a0aa;
+    font-size: 16px;
+    text-align: center;
+    margin: 80px 0;
+}
+
+.ui-icon-warp i{
+    color: #3e79e4;
+    font-size: 30px;
+    position: relative;
+    top: 6px;
+}

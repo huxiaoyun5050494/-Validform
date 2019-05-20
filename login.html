@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <head>
+        <meta charset="UTF-8">
+        <title>灵活用工</title>
+        <script src="./js/lib/jquery.min.js"></script>
+        <!--layui框架样式-->
+        <link rel="stylesheet" href="./js/lib/layui/css/layui.css">
+        <!--layui js-->
+        <script src="./js/lib/layui/layui.js"></script>
+        <!--注册 登录 找回密码 头部公共样式-->
+        <link rel="stylesheet" href="./css/userPublic.css">
+        <!--全局公共js-->
+        <script src="./js/global.js"></script>
+
+        <!--登录-->
+        <link rel="stylesheet" href="./css/login.css">
+        <!--私有js-->
+        <script src="./js/login.js"></script>
+        <!--表单校验-->
+        <script src="./js/lib/Validform_v5.3.2_min.js"></script>
+    </head>
+</head>
+<body>
+    <div class="user-header">
+        <div class="user-header-con">
+            <img src="./images/log.png" alt="">
+            <div class="user-header-btn">
+                <span>非雇佣员工发工资更便捷</span>
+                <!--<a href="javascript:;">忘记密码</a>-->
+                <!--<a href="javascript:;">返回登录页</a>-->
+            </div>
+        </div>
+    </div>
+
+    <div class="ui-login-box">
+        <div class="ui-login-right">
+            <img src="./images/login.jpg" alt="">
+            <p>非雇佣员工发工资更便捷</p>
+        </div>
+        <div class="ui-login-left">
+
+            <div class="ui-login-btn-box">
+                <span>登录</span>
+                <a href="javascript:;">立即注册</a>
+            </div>
+
+            <form method="post" class="layui-form js-login-form">
+                <div class="ui-relative">
+                    <i class="iconfont">&#xe743;</i>
+                    <input type="text" datatype="*" nullmsg="请输入登录名!" errormsg="请输入登录名!"  name="title" placeholder="登录名" autocomplete="off" class="layui-input">
+                </div>
+                <div class="ui-relative">
+                    <i class="iconfont">&#xe77d;</i>
+                    <input type="password" nullmsg="请输入密码!" datatype="*6-15" errormsg="密码范围在6~15位之间！"  name="title" placeholder="登录名" class="layui-input">
+                </div>
+                <div>
+                    <a href="javascript:;" class="ui-login-btn js-login-submit">登录</a>
+                </div>
+                <div class="ui-forget-box">
+                    <a href="javascript:;">忘记密码</a>
+                </div>
+            </form>
+
+        </div>
+        
+
+
+    </div>
+
+</body>
+</html>

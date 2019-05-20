@@ -1,0 +1,58 @@
+.layui-form-radio>i:hover, .layui-form-radioed>i {
+    color: #4e89f8;
+}
+.num-warp{
+    background: #fff;
+    overflow: hidden;
+    margin-top:10px;
+    line-height: 60px;
+}
+.num-warp p{
+    color: #aaaeb7;
+    font-size: 14px;
+    float: right;
+    text-indent: 32px;
+}
+.num-warp span{
+    color:#ff932e;
+}
+.ui-submit{
+    background: #5e84ff;
+    color: #fff;
+    font-size: 16px;
+    height: 34px;
+    outline: none;
+    cursor: pointer;
+    border: none;
+    border-radius: 3px;
+    display: inline-block;
+    width: 110px;
+    text-align: center;
+    line-height: 34px;
+    float: right;
+    margin: 13px 31px;
+}
+.ui3-getInfo{}
+.ui3-getInfo ul{
+    overflow: hidden;
+}
+.ui3-getInfo ul li{
+    font-size: 14px;
+    color: #99a0aa;
+    float: left;
+    width: 25%;
+    margin: 39px 0;
+}
+.ui3-getInfo ul li span{}
+.ui-change a{
+    color:#5e84ff;
+    font-size: 14px;
+    padding: 0 14px;
+
+}
+.ui-change a:nth-child(1){
+border-right: 1px solid #cdcdcd;
+}
+.ui-change a:nth-child(2){
+border-right: 1px solid #cdcdcd;
+}

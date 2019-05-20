@@ -1,0 +1,215 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="./js/lib/jquery.min.js"></script>
+    <!--layui框架样式-->
+    <link rel="stylesheet" href="./js/lib/layui/css/layui.css">
+    <!--layui js-->
+    <script src="./js/lib/layui/layui.js"></script>
+    <!--全局公共样式-->
+    <link rel="stylesheet" href="./css/public.css">
+    <!--全局公共js-->
+    <script src="./js/global.js"></script>
+
+    <!--私有css-->
+    <link rel="stylesheet" href="./css/orderManagement.css">
+    <!--私有js-->
+    <script src="./js/orderManagement.js"></script>
+    <!--表单校验-->
+    <script src="./js/lib/Validform_v5.3.2_min.js"></script>
+</head>
+<body>
+<!--左侧菜单-->
+<div class="ui-left-nemu">
+    <div class="nav-top-box">
+        <div class="nav-logo-box">
+            <img src="./images/log-header.png" alt="">
+        </div>
+        <div class="layui-form nav-select-box">
+            <select name="city" lay-verify="" lay-filter="nav-select">
+                <option value="">北京未名品尚技术有限公司</option>
+                <option value="010">北京</option>
+                <option value="021">上海</option>
+                <option value="0571">杭州</option>
+            </select>
+        </div>
+        <p class="nav-text">导航列表</p>
+    </div>
+    <ul class="nav-list-box">
+        <li>
+            <a href="javascript:;"> <i class="iconfont">&#xe6ec;</i><span>资金管理</span></a>
+        </li>
+        <li>
+            <a href="javascript:;"><i class="iconfont">&#xe6bc;</i><span>发放管理</span></a>
+        </li>
+        <li>
+            <a href="javascript:;"><i class="iconfont">&#xe6b9;</i><span>发放记录</span></a>
+        </li>
+
+        <li>
+            <a href="javascript:;"><i class="iconfont">&#xe62c;</i><span>账户管理</span></a>
+        </li>
+        <li>
+            <a href="javascript:;"><i class="iconfont">&#xe6a3;</i><span>资金管理</span></a>
+        </li>
+        <li>
+            <a href="javascript:;"><i class="iconfont">&#xe658;</i><span>发票管理</span></a>
+        </li>
+        <li>
+            <a class="active" href="javascript:;"><i class="iconfont">&#xe644;</i><span>订单管理</span></a>
+        </li>
+        <li>
+            <a href="javascript:;"><i class="iconfont">&#xe664;</i><span>操作员管理</span></a>
+        </li>
+
+    </ul>
+</div>
+<!--右侧-->
+<div class="ui-right-content">
+    <!--头部-->
+    <header class="g-header-box">
+        <div class="header-left">
+            <a href="javascript:;">当前位置：</a>
+            <a href="javascript:;" class="active">订单管理</a>
+        </div>
+        <div class="header-user-box">
+            <img src="./images/log.png" alt="">
+            <span>退出</span>
+        </div>
+    </header>
+    <!--内容-->
+    <div class="ui-container-g js-container-g">
+
+        <!--交易记录 独立内容-->
+        <div class="ui-transactionRecord-box">
+            <h3 class="ui-g-h3-border">订单管理</h3>
+            <div>
+                <form action="" method="" class="layui-form ">
+                    <div class="layui-inline">
+                        <label class="layui-form-label" style="width: 50px">订单号</label>
+                        <div class="layui-input-inline" style="width: 190px;">
+                            <input type="text" name="" maxlength="11" class="layui-input" placeholder="请输入订单号">
+                        </div>
+                    </div>
+                    <div class="layui-inline">
+                        <label class="layui-form-label">订单状态</label>
+                        <div class="layui-input-inline">
+                            <select name="" lay-filter="capital-select">
+                                <option value="">全部</option>
+                                <option value="">111</option>
+                                <option value="">111</option>
+                                <option value="">111</option>
+                            </select>
+                        </div>
+                    </div>
+
+
+                    <a href="javascript:;" class="ui-blue-btn">查询</a>
+                    <table class="layui-table" lay-skin="line">
+                        <colgroup>
+                            <col width="150">
+                            <col width="200">
+                            <col>
+                        </colgroup>
+                        <thead>
+                        <tr>
+                            <th>申请编号</th>
+                            <th>下单商户</th>
+                            <th>科目</th>
+                            <th>采购总金额（元）</th>
+                            <th>服务费费率（%）</th>
+                            <th>下单时间</th>
+                            <th>订单总金额（元）</th>
+                            <th>订单状态</th>
+                            <th>操作</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td>05390353</td>
+                            <td>蘑菇公司</td>
+                            <td>旅游服务费</td>
+                            <td>99</td>
+                            <td>99%</td>
+                            <td>2019-04-12  12:12:00</td>
+                            <td>100</td>
+                            <td>待审核</td>
+                            <td class="ui-change">
+
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>05390353</td>
+                            <td>蘑菇公司</td>
+                            <td>旅游服务费</td>
+                            <td>99</td>
+                            <td>99%</td>
+                            <td>2019-04-12  12:12:00</td>
+                            <td>100</td>
+                            <td>待支付</td>
+                            <td class="ui-change">
+                                <a href="javascript:;" class="">去付款</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>05390353</td>
+                            <td>蘑菇公司</td>
+                            <td>旅游服务费</td>
+                            <td>99</td>
+                            <td>99%</td>
+                            <td>2019-04-12  12:12:00</td>
+                            <td>100</td>
+                            <td>水单审核未通过</td>
+                            <td class="ui-change">
+                                <a href="javascript:;">重新上传水单</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>05390353</td>
+                            <td>蘑菇公司</td>
+                            <td>旅游服务费</td>
+                            <td>99</td>
+                            <td>99%</td>
+                            <td>2019-04-12  12:12:00</td>
+                            <td>100</td>
+                            <td>订单处理中</td>
+                            <td class="ui-change">
+                                <!--<a href="javascript:;">申请开票</a>-->
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>05390353</td>
+                            <td>蘑菇公司</td>
+                            <td>旅游服务费</td>
+                            <td>99</td>
+                            <td>99%</td>
+                            <td>2019-04-12  12:12:00</td>
+                            <td>100</td>
+                            <td>订单完成</td>
+                            <td class="ui-change">
+                                <a href="javascript:;" class="">删除</a>
+                            </td>
+                        </tr>
+                        </tbody>
+                    </table>
+                    <div>
+                        <!--分页-->
+                        <div id="capital-page" class="ui-capital-page"></div>
+                        <!--page 隐藏字段-->
+                        <input type="hidden" name="pages">
+                    </div>
+                </form>
+            </div>
+
+        </div>
+        <!--交易记录 独立内容  end-->
+
+    </div>
+</div>
+</body>
+</html>

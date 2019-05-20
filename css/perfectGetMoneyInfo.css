@@ -1,0 +1,53 @@
+.ui-submit{
+    background: #5e84ff;
+    color: #fff;
+    font-size: 16px;
+    height: 50px;
+    outline: none;
+    cursor: pointer;
+    border: none;
+    border-radius: 3px;
+    display: inline-block;
+    width: 350px;
+    text-align: center;
+}
+.ui-enterAuth-form em{
+    font-style: normal;
+    color: red;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 5px;
+    position: relative;
+    top: 1px;
+}
+.ui-enterAuth-form .layui-inline{
+    width:350px;
+}
+.ui-enterAuth-form .layui-input{
+    width:350px;
+}
+.ui-enterAuth-form .layui-form-label {
+    width: 126px;
+}
+.ui-code-box{
+
+
+}
+.ui-code-box input{
+    width: 210px !important;
+    display: inline-block;
+}
+
+.ui-code{
+    background: #fafbfd;
+    font-size: 14px;
+    color: #99a0aa;
+    display: inline-block;
+    cursor: pointer;
+    width: 134px;
+    height: 38px;
+    line-height: 38px;
+    border: 1px solid #efefef;
+    text-align: center;
+    margin-bottom: 20px;
+}

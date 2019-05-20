@@ -1,0 +1,35 @@
+.ui-change a{
+    color:#5e84ff;
+    font-size: 14px;
+    padding: 0 14px;
+
+}
+.ui-change a:nth-child(1){
+    border-right: 1px solid #cdcdcd;
+}
+.ui-submit{
+    background: #5e84ff;
+    color: #fff;
+    font-size: 16px;
+    height: 50px;
+    outline: none;
+    cursor: pointer;
+    border: none;
+    border-radius: 3px;
+    display: inline-block;
+    width: 140px;
+    text-align: center;
+}
+.ui-btn-group .ui-submit:nth-child(1){
+    border:1px solid #5e84ff;
+}
+.ui-btn-group .ui-submit:nth-child(2){
+    border:1px solid #5e84ff;
+    color:#5e84ff;
+    background: #fff;
+    margin-left:10px;
+}
+.ui-btn-group{
+    width: 300px;
+    margin: 55px auto;
+}

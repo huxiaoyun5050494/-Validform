@@ -1,0 +1,195 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="./js/lib/jquery.min.js"></script>
+    <!--layui框架样式-->
+    <link rel="stylesheet" href="./js/lib/layui/css/layui.css">
+    <!--layui js-->
+    <script src="./js/lib/layui/layui.js"></script>
+    <!--全局公共样式-->
+    <link rel="stylesheet" href="./css/public.css">
+    <!--全局公共js-->
+    <script src="./js/global.js"></script>
+
+    <!--私有css-->
+    <link rel="stylesheet" href="./css/enterpriseManage.css">
+    <!--私有js-->
+    <script src="./js/enterpriseManage.js"></script>
+    <!--表单校验-->
+    <script src="./js/lib/Validform_v5.3.2_min.js"></script>
+</head>
+<body>
+<!--左侧菜单-->
+<div class="ui-left-nemu">
+    <div class="nav-top-box">
+        <div class="nav-logo-box">
+            <img src="./images/log-header.png" alt="">
+        </div>
+        <div class="layui-form nav-select-box">
+            <select name="city" lay-verify="" lay-filter="nav-select">
+                <option value="">北京未名品尚技术有限公司</option>
+                <option value="010">北京</option>
+                <option value="021">上海</option>
+                <option value="0571">杭州</option>
+            </select>
+        </div>
+        <p class="nav-text">导航列表</p>
+    </div>
+    <ul class="nav-list-box">
+        <li>
+            <a class="active" href="javascript:;"> <i class="iconfont">&#xe6ec;</i><span>资金管理</span></a>
+        </li>
+        <li>
+            <a href="javascript:;"><i class="iconfont">&#xe6bc;</i><span>发放管理</span></a>
+        </li>
+        <li>
+            <a href="javascript:;"><i class="iconfont">&#xe6b9;</i><span>发放记录</span></a>
+        </li>
+
+        <li>
+            <a href="javascript:;"><i class="iconfont">&#xe62c;</i><span>账户管理</span></a>
+        </li>
+        <li>
+            <a href="javascript:;"><i class="iconfont">&#xe6a3;</i><span>资金管理</span></a>
+        </li>
+        <li>
+            <a href="javascript:;"><i class="iconfont">&#xe658;</i><span>发票管理</span></a>
+        </li>
+        <li>
+            <a href="javascript:;"><i class="iconfont">&#xe644;</i><span>订单管理</span></a>
+        </li>
+        <li>
+            <a href="javascript:;"><i class="iconfont">&#xe664;</i><span>操作员管理</span></a>
+        </li>
+
+    </ul>
+</div>
+<!--右侧-->
+<div class="ui-right-content">
+    <!--头部-->
+    <header class="g-header-box">
+        <div class="header-left">
+            <a href="javascript:;">当前位置：</a>
+            <a href="javascript:;" class="active">企业管理</a>
+        </div>
+        <div class="header-user-box">
+            <img src="./images/log.png" alt="">
+            <span>退出</span>
+        </div>
+    </header>
+    <!--内容-->
+    <div class="ui-container-g js-container-g">
+
+        <!--交易记录 独立内容-->
+        <div class="ui-transactionRecord-box">
+            <h3 class="ui-g-h3-border">企业管理
+                <a href="javascript:;" class="ui-add-btn js-add-btn js-change">
+                    <i  class="iconfont">&#xe6d1;</i>
+                    添加企业
+                </a>
+            </h3>
+            <div>
+                <form action="" method="" class="layui-form capital-table">
+                    <table class="layui-table" lay-skin="line">
+                        <colgroup>
+                            <col width="150">
+                            <col width="200">
+                            <col>
+                        </colgroup>
+                        <thead>
+                        <tr>
+                            <th>企业名称</th>
+                            <th>添加时间</th>
+                            <th>认证状态</th>
+                            <th>企业状态</th>
+                            <th>操作</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td>贤心</td>
+                            <td>2016-11-29</td>
+                            <td>已认证</td>
+                            <td>正常</td>
+                            <td class="ui-change">
+                                <a href="javascript:;" class="js-change">编辑企业信息</a>
+                                <a href="javascript:;">注销企业</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>贤心</td>
+                            <td>2016-11-29</td>
+                            <td>未认证</td>
+                            <td>正常</td>
+                            <td class="ui-change">
+                                <a href="javascript:;" class="js-change">编辑企业信息</a>
+                                <a href="javascript:;">注销企业</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>贤心</td>
+                            <td>2016-11-29</td>
+                            <td>认证中</td>
+                            <td>正常</td>
+                            <td class="ui-change">
+                                <a href="javascript:;" class="js-change">编辑企业信息</a>
+                                <a href="javascript:;">注销企业</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>贤心</td>
+                            <td>2016-11-29</td>
+                            <td>认证中</td>
+                            <td>注销</td>
+                            <td class="ui-change">
+
+                            </td>
+                        </tr>
+                        </tbody>
+                    </table>
+
+                    <div>
+                        <!--分页-->
+                        <div id="capital-page" class="ui-capital-page"></div>
+                        <!--page 隐藏字段-->
+                        <input type="hidden" name="pages">
+                    </div>
+                </form>
+            </div>
+            <!--弹窗-->
+            <div class="js-popup" style="display: none">
+                <form class="layui-form capital-popups-box js-enterprise-form" action="">
+                    <div class="layui-form-item">
+                        <label class="layui-form-label"><em>*</em>企业名称</label>
+                        <div class="layui-input-block">
+                            <input nullmsg="请输入你的公司全称!" datatype="*" errormsg="请输入你的公司全称!"  type="text"  name="title" placeholder="请输入你的公司全称" autocomplete="off" class="layui-input">
+                        </div>
+                    </div>
+                    <div class="layui-form-item">
+                        <label class="layui-form-label"><em>*</em>公司地址</label>
+                        <div class="layui-input-block">
+                            <input nullmsg="请输入企业办公地址!" datatype="*" errormsg="请输入企业办公地址!"  type="text"  name="title" placeholder="请输入企业办公地址" autocomplete="off" class="layui-input">
+                        </div>
+                    </div>
+
+                    <div class="layui-form-item">
+                        <label class="layui-form-label"></label>
+                        <div class="layui-input-block">
+                            <input class="ui-submit js-enterprise-submit" type="button" value="确认修改">
+                            <input class="ui-submit js-enterprise-out" type="button" value="取消">
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <!--交易记录 独立内容  end-->
+
+    </div>
+</div>
+</body>
+</html>
